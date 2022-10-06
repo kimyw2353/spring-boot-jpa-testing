@@ -8,12 +8,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data //getter, setter 만들어줌
 @AllArgsConstructor // 필드에 쓴 모든 생성자 만들어줌
 @NoArgsConstructor //기본생성자를 만들어줌
+@Builder
 @Entity
 @Table(name = "employees")
 
